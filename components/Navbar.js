@@ -23,7 +23,7 @@ export default function Navbar({ position = 25 }) {
                     <Tooltip title='Very first Plaec' arrow>
                         <Button color="inherit" variant="contained" >
                             <SellIcon color={position >= 5 ? 'primary' : position >= 3 ? 'error' : 'action'} />
-                            <Typography color='indigo'> `&nbsp;`{position >= 5 ? 'level 1' : position >= 3 ? 'level 2' : 'level 3'}</Typography>
+                            <Typography color='indigo'>&nbsp;{position >= 5 ? 'level 1' : position >= 3 ? 'level 2' : 'level 3'}</Typography>
                         </Button>
                     </Tooltip>
                 </Toolbar>

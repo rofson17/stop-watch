@@ -1,13 +1,12 @@
 import { deleteCookie, getCookie } from 'cookies-next';
 import Head from 'next/head'
-import { useEffect, useReducer, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Navbar from '../components/Navbar';
-import Watch from '../components/Watch';
+import Watch from '../components/Watch/Watch';
 
 
 export default function Home() {
-
   const [level, setLevel] = useState(1);
 
   useEffect(() => {
@@ -20,7 +19,6 @@ export default function Home() {
         setLevel(parseInt(getCookie('level')));
     }
   }, []);
-  (level)
 
   return (
     <>
