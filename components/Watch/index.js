@@ -5,7 +5,7 @@ import Stapper from "./Stapper"
 import { setCookie, getCookie, deleteCookie } from "cookies-next";
 
 
-export default function ({ setLevel, level }) {
+export default function index({ setLevel, level }) {
     const [second, setSecond] = useState(0);
     const [minute, setMinute] = useState(0);
     const [isStart, setIsStart] = useState(false);
