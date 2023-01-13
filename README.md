@@ -26,7 +26,9 @@ To deploy this project run
 ```bash
   yarn run buid
 ```
-
+```bash
+  yarn start
+```
 
 ## Run Locally
 
